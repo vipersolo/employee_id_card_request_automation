@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Employee ID Card Request">890ba32e93989f1005dff7dddd03d631</application>
+        <filter/>
+        <name>Employee ID Card Requests</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_2250616_employ_0.employee_id_card_request_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 07:10:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c10ba32e93989f1005dff7dddd03d65c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee ID Card Requests</sys_name>
+        <sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_update_name>sys_ui_module_c10ba32e93989f1005dff7dddd03d65c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 07:10:46</sys_updated_on>
+        <table>x_2250616_employ_0_employee_id_card_request</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</application>
+        <file_path/>
+        <instance_id>92bbf4103be33a9cc55a348aa4e45a65</instance_id>
+        <instance_name>dev366298</instance_name>
+        <merge_base/>
+        <name>sys_ui_module_c10ba32e93989f1005dff7dddd03d65c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Employee ID Card Request">890ba32e93989f1005dff7dddd03d631</application><filter/><name>Employee ID Card Requests</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_2250616_employ_0.employee_id_card_request_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-05 07:10:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c10ba32e93989f1005dff7dddd03d65c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Employee ID Card Requests</sys_name><sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package><sys_policy/><sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope><sys_update_name>sys_ui_module_c10ba32e93989f1005dff7dddd03d65c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-05 07:10:46</sys_updated_on><table>x_2250616_employ_0_employee_id_card_request</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>1229914036</payload_hash>
+        <record_name>Employee ID Card Requests</record_name>
+        <reverted_from/>
+        <source>0d0ba32e93989f1005dff7dddd03d61b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 07:10:46</sys_created_on>
+        <sys_id>1d0ba32e93989f1005dff7dddd03d660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1aa8bba310000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 07:10:46</sys_updated_on>
+        <type>Module</type>
+        <update_guid>990ba32eb0989f100e5f99bef145875f</update_guid>
+        <update_guid_history>990ba32eb0989f100e5f99bef145875f:1229914036</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 07:12:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>471850ca1f2649a48996f2552a8086c4</sys_id>
+        <sys_metadata>c10ba32e93989f1005dff7dddd03d65c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee ID Card Requests</sys_name>
+        <sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_scope_delete display_value="">0bf8443582f4418a833ddb9ebbd19af9</sys_scope_delete>
+        <sys_update_name>sys_ui_module_c10ba32e93989f1005dff7dddd03d65c</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_c10ba32e93989f1005dff7dddd03d65c">1d0ba32e93989f1005dff7dddd03d660</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 07:12:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

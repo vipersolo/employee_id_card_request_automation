@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="a3dd73a2935c9f1005dff7dddd03d6aa" extends="x_2250616_employ_0_employee_id_card_request" label="task " max_length="40" name="x_2250616_employ_0_task" type="collection">
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="description" max_length="40" name="description" type="string"/>
+        <element label="Assign To" max_length="32" name="assign_to" reference="sys_user" type="reference"/>
+        <element choice="3" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="1" value="low"/>
+            </choice>
+        </element>
+        <element choice="3" label="state" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Closed Completed" sequence="2" value="closed_completed"/>
+                <element inactive_on_update="false" label="Work In Progress" sequence="1" value="work_in_progress"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="assign_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+    </element>
+</database>

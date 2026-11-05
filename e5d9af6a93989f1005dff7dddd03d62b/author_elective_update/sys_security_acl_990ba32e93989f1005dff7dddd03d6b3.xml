@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_2250616_employ_0_employee_id_card_request</description>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_2250616_employ_0_employee_id_card_request</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 07:10:46</sys_created_on>
+        <sys_id>990ba32e93989f1005dff7dddd03d6b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2250616_employ_0_employee_id_card_request</sys_name>
+        <sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_update_name>sys_security_acl_990ba32e93989f1005dff7dddd03d6b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 07:10:46</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</application>
+        <file_path/>
+        <instance_id>92bbf4103be33a9cc55a348aa4e45a65</instance_id>
+        <instance_name>dev366298</instance_name>
+        <merge_base/>
+        <name>sys_security_acl_990ba32e93989f1005dff7dddd03d6b3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Default access control on x_2250616_employ_0_employee_id_card_request</description><local_or_existing>Existing</local_or_existing><name>x_2250616_employ_0_employee_id_card_request</name><operation display_value="delete">delete</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-05 07:10:46</sys_created_on><sys_id>990ba32e93989f1005dff7dddd03d6b3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_2250616_employ_0_employee_id_card_request</sys_name><sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package><sys_policy/><sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope><sys_update_name>sys_security_acl_990ba32e93989f1005dff7dddd03d6b3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-05 07:10:46</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-2039680602</payload_hash>
+        <record_name>x_2250616_employ_0_employee_id_card_request</record_name>
+        <reverted_from/>
+        <source>0d0ba32e93989f1005dff7dddd03d61b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 07:10:46</sys_created_on>
+        <sys_id>d90ba32e93989f1005dff7dddd03d6b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1aa8bbc210000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 07:10:46</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>990ba32e4b989f1002c9ae407f6f63b8</update_guid>
+        <update_guid_history>990ba32e4b989f1002c9ae407f6f63b8:-2039680602</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 07:12:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>397cd4f83864473ba54988d706423811</sys_id>
+        <sys_metadata>990ba32e93989f1005dff7dddd03d6b3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2250616_employ_0_employee_id_card_request</sys_name>
+        <sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package>
+        <sys_parent display_value="">5d0ba32e93989f1005dff7dddd03d6c4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_scope_delete display_value="">0bf8443582f4418a833ddb9ebbd19af9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_990ba32e93989f1005dff7dddd03d6b3</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_990ba32e93989f1005dff7dddd03d6b3">d90ba32e93989f1005dff7dddd03d6b9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 07:12:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

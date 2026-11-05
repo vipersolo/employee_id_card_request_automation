@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 07:14:31</sys_created_on>
+        <sys_id>d0eb23ae93989f1005dff7dddd03d6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2250616_employ_0_employee_id_card_request.x_2250616_employ_0.employee_id_card_request_user</sys_name>
+        <sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_security_acl display_value="x_2250616_employ_0_employee_id_card_request">54eb23ae93989f1005dff7dddd03d6b3</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d0eb23ae93989f1005dff7dddd03d6ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 07:14:31</sys_updated_on>
+        <sys_user_role display_value="x_2250616_employ_0.employee_id_card_request_user" name="x_2250616_employ_0.employee_id_card_request_user">8d0b6fea93989f1005dff7dddd03d636</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

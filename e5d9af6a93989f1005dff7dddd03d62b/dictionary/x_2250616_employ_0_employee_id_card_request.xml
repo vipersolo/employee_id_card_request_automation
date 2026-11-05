@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="557be36e93989f1005dff7dddd03d6ea" label="Employee ID Card Request" max_length="40" name="x_2250616_employ_0_employee_id_card_request" type="collection">
+        <element choice="3" label="Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Operations" sequence="4" value="operations"/>
+                <element inactive_on_update="false" label="Finance" sequence="2" value="finance"/>
+                <element inactive_on_update="false" label="Sales" sequence="3" value="sales"/>
+                <element inactive_on_update="false" label="IT" sequence="1" value="it"/>
+                <element inactive_on_update="false" label="Administrations" sequence="5" value="administrations"/>
+                <element inactive_on_update="false" label="HR" sequence="0" value="hr"/>
+            </choice>
+        </element>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Pending Approval" sequence="1" value="pending_approval"/>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Completed" sequence="4" value="completed"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Employee ID" max_length="40" name="employee_id" type="string"/>
+        <element label="Approved By" max_length="32" name="approved_by" reference="sys_user" type="reference"/>
+        <element label="Reason for Request" max_length="4000" name="reason_for_request" type="string"/>
+        <element default="javascript:gs.nowDateTime();" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Requested Date" max_length="40" name="requested_date" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="Employee Name" max_length="32" name="employee_name" reference="sys_user" type="reference"/>
+        <element choice="3" label="ID Card Type" max_length="40" name="id_card_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Permanent" sequence="1" value="permanent"/>
+                <element inactive_on_update="false" label="Temporary" sequence="0" value="temporary"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="approved_by"/>
+        </index>
+        <index name="index2">
+            <element name="employee_name"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>30000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>employee_id_card_request_automation</internal_name>
+        <label_cache>[{"name":"trigger.current.approved_by","label":"Trigger - Record Created➛Employee ID Card Request Record➛Approved By","reference":"sys_user","reference_display":"Approved By","type":"reference","base_type":"reference","parent_table_name":"x_2250616_employ_0_employee_id_card_request","column_name":"approved_by","usedInstances":{"2a7f68d6-33c8-41eb-82b5-d8db3913d6ae":["approval_conditions"],"be59a4d9-46d4-4ffa-99b7-e8d4ceb9a3b9":["approved_by"],"243b82a2-985f-4ae2-9ef0-850aa8c05cec":["approved_by"],"3ac83c35-286f-43b1-89cc-bd450b4bb5db":["approved_by"]}},{"name":"trigger.table_name","label":"Trigger - Record Created➛Employee ID Card Request Table","reference":"x_2250616_employ_0_employee_id_card_request","reference_display":"Employee ID Card Request","type":"table_name","base_type":"table_name","usedInstances":{"3ac83c35-286f-43b1-89cc-bd450b4bb5db":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"trigger.current.department","label":"Trigger - Record Created➛Employee ID Card Request Record➛Department","reference":"","reference_display":"Department","type":"choice","base_type":"choice","parent_table_name":"x_2250616_employ_0_employee_id_card_request","column_name":"department","choices":[{"parameters":{"name":"x_2250616_employ_0_employee_id_card_request","dependent_values":[""],"dependent_values_map":{"":"HR"}},"sequence":0.0,"label":"HR","used":false,"selected":false,"image":"","rawLabel":"HR","missing":false,"reference":false,"value":"hr"},{"parameters":{"name":"x_2250616_employ_0_employee_id_card_request","dependent_values":[""],"dependent_values_map":{"":"IT"}},"sequence":1.0,"label":"IT","used":false,"selected":false,"image":"","rawLabel":"IT","missing":false,"reference":false,"value":"it"},{"parameters":{"name":"x_2250616_employ_0_employee_id_card_request","dependent_values":[""],"dependent_values_map":{"":"Finance"}},"sequence":2.0,"label":"Finance","used":false,"selected":false,"image":"","rawLabel":"Finance","missing":false,"reference":false,"value":"finance"},{"parameters":{"name":"x_2250616_employ_0_employee_id_card_request","dependent_values":[""],"dependent_values_map":{"":"Sales"}},"sequence":3.0,"label":"Sales","used":false,"selected":false,"image":"","rawLabel":"Sales","missing":false,"reference":false,"value":"sales"},{"parameters":{"name":"x_2250616_employ_0_employee_id_card_request","dependent_values":[""],"dependent_values_map":{"":"Operations"}},"sequence":4.0,"label":"Operations","used":false,"selected":false,"image":"","rawLabel":"Operations","missing":false,"reference":false,"value":"operations"},{"parameters":{"name":"x_2250616_employ_0_employee_id_card_request","dependent_values":[""],"dependent_values_map":{"":"Administrations"}},"sequence":5.0,"label":"Administrations","used":false,"selected":false,"image":"","rawLabel":"Administrations","missing":false,"reference":false,"value":"administrations"}],"usedInstances":{"243b82a2-985f-4ae2-9ef0-850aa8c05cec":["department"]}},{"name":"2a7f68d6-33c8-41eb-82b5-d8db3913d6ae.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"trigger.current","label":"Trigger - Record Created➛Employee ID Card Request Record","reference":"x_2250616_employ_0_employee_id_card_request","reference_display":"Employee ID Card Request","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"0de85c73-f007-4e00-a500-fc33e8feb2ac":["record"],"2a7f68d6-33c8-41eb-82b5-d8db3913d6ae":["record"],"be59a4d9-46d4-4ffa-99b7-e8d4ceb9a3b9":["record"],"243b82a2-985f-4ae2-9ef0-850aa8c05cec":["assign_to"]},"attributes":{"":""}},{"name":"be59a4d9-46d4-4ffa-99b7-e8d4ceb9a3b9.record","label":"3 - Update Record➛Employee ID Card Request Record","reference":"x_2250616_employ_0_employee_id_card_request","reference_display":"Employee ID Card Request Record","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2a7f68d6-33c8-41eb-82b5-d8db3913d6ae.__action_status__","label":"1 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{},"attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"trigger.current.id_card_type","label":"Trigger - Record Created➛Employee ID Card Request Record➛ID Card Type","reference":"","reference_display":"ID Card Type","type":"choice","base_type":"choice","parent_table_name":"x_2250616_employ_0_employee_id_card_request","column_name":"id_card_type","choices":[{"parameters":{"name":"x_2250616_employ_0_employee_id_card_request","dependent_values":[""],"dependent_values_map":{"":"Temporary"}},"sequence":0.0,"label":"Temporary","used":false,"selected":false,"image":"","rawLabel":"Temporary","missing":false,"reference":false,"value":"temporary"},{"parameters":{"name":"x_2250616_employ_0_employee_id_card_request","dependent_values":[""],"dependent_values_map":{"":"Permanent"}},"sequence":1.0,"label":"Permanent","used":false,"selected":false,"image":"","rawLabel":"Permanent","missing":false,"reference":false,"value":"permanent"}],"usedInstances":{"5fccfbc5-45b2-452d-8194-46aa8d3185d4":["condition"]}},{"name":"trigger.current.employee_name","label":"Trigger - Record Created➛Employee ID Card Request Record➛Employee Name","reference":"sys_user","reference_display":"Employee Name","type":"reference","base_type":"reference","parent_table_name":"x_2250616_employ_0_employee_id_card_request","column_name":"employee_name","usedInstances":{"0de85c73-f007-4e00-a500-fc33e8feb2ac":["ah_to","record"],"243b82a2-985f-4ae2-9ef0-850aa8c05cec":["employee_name"],"3ac83c35-286f-43b1-89cc-bd450b4bb5db":["employee_name"]}},{"name":"243b82a2-985f-4ae2-9ef0-850aa8c05cec.table_name","label":"6 - Create Record➛task  Table","reference":"x_2250616_employ_0_task","reference_display":"task  Table","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"trigger.current.employee_id","label":"Trigger - Record Created➛Employee ID Card Request Record➛Employee ID","reference":"","reference_display":"Employee ID","type":"string","base_type":"string","parent_table_name":"x_2250616_employ_0_employee_id_card_request","column_name":"employee_id","usedInstances":{"3ac83c35-286f-43b1-89cc-bd450b4bb5db":["employee_id"]}},{"name":"trigger.current.reason_for_request","label":"Trigger - Record Created➛Employee ID Card Request Record➛Reason for Request","reference":"","reference_display":"Reason for Request","type":"string","base_type":"string","parent_table_name":"x_2250616_employ_0_employee_id_card_request","column_name":"reason_for_request","usedInstances":{"3ac83c35-286f-43b1-89cc-bd450b4bb5db":["reason_for_request"]}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Employee ID Card Request Automation</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 08:56:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6d23003e935c9f1005dff7dddd03d65a</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>Employee ID Card Request Automation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_update_name>sys_hub_flow_6d23003e935c9f1005dff7dddd03d65a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:57:00</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>270154f693dc9f1005dff7dddd03d67a</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6d23003e935c9f1005dff7dddd03d65a^sys_idNOT INa123003e935c9f1005dff7dddd03d65c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6d23003e935c9f1005dff7dddd03d65a</id>
+        <name>Employee ID Card Request Automation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 08:56:11</sys_created_on>
+        <sys_id>a123003e935c9f1005dff7dddd03d65c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 08:56:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a123003e935c9f1005dff7dddd03d65c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6d23003e935c9f1005dff7dddd03d65a^sys_idNOT IN0f23843e935c9f1005dff7dddd03d6b8,4323c43e935c9f1005dff7dddd03d60c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</model>
+        <model_id>6d23003e935c9f1005dff7dddd03d65a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6d23003e935c9f1005dff7dddd03d65a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 08:56:17</sys_created_on>
+        <sys_id>0f23843e935c9f1005dff7dddd03d6b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0f23843e935c9f1005dff7dddd03d6b8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</model>
+        <model_id>6d23003e935c9f1005dff7dddd03d65a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6d23003e935c9f1005dff7dddd03d65a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 08:56:18</sys_created_on>
+        <sys_id>4323c43e935c9f1005dff7dddd03d60c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4323c43e935c9f1005dff7dddd03d60c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6d23003e935c9f1005dff7dddd03d65a^sys_idNOT IN3223843e935c9f1005dff7dddd03d6af"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 08:56:17</sys_created_on>
+        <sys_id>3223843e935c9f1005dff7dddd03d6af</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY2W7jNhT9FUFPLeABtHiJ8za1PWiANEEdT/sQpAIlkTZRmvRIlDKeQf69l1psWYtjx1bqPCXieu7hueeSfvypM+Ripl/rM+QyrHd0yiUOOGKz9QpDs1TNDkdL1bdE3EdSBGv9WgYR7ugkEMsZXq4YkjCYIBZCowh8HOjXZkePEYvwwzq88WElmJ8sk62pZ93w/d2xrJ7RN/uOWkqsHSP7B2OH+o6HAt8J8LcIhxJm+TSE/dZ/ZZMn2UjtZqyNYKQ23Yz0FpT5Aeb69eNTR1+hALaXCtrPUpeEWJ0dIrS7NGKqkHvEQ0MLG55t2pZlGNZV13T7tmtavo2wYcC4MoulSGUNmVua8HeJuY/9DYMVngOM/HvO1psRCzimlNMl+h7SH7D6laHGEQxReTjt23w6GWlps7cQ1MP3K0kFT1tSnGmnYNGS36X4Fd2YoIjJnG5oiUJYD68UZAUiQ0QeFuJ5mm/4hfIkuqyTCQ+xzReSMqBuJHGojoJQBofipNyEIgoS9NPJ6H46dv7+PBv9Ppk608nDbHozmk3G+ksSl/MtUiumCDMsThrOy0YjXyhm6gB5tHQBTUcPvYCu5GdP0jjX60tnmwMjwX2asFLJAy/vCnfzII9+XyIYRmMqeIUd83T4Z/JnVeZp49sUPSpiTxTd7yPkY9SgaJcUFF3kpAa0rKGnGPc+bWcth4i7axj/k7wzo3urup8Rl6EjhYN8cLItS2AGsLAKUfiYjbf7QTudzyEhKF9FMnxV7mlsL69qO4g4THA251FVeELbhr9bCh56/Qj5+aAMNSH9E5gVyanK8JPbbINpxDXBNS8KgCOpwTFr+WZaAlJJg9ws0TwjGhZm2JMFbZCvYfHrDxqGlM8LwTRhSQZUwbB1EVFuxqdgeDpn8lePJC7FUzKBtztAfrZJ9psmIS4mljFQuW8atktMY2D0EPFtw/CsQvZXITZilyUZteICx3lAmAiYHaCJMvEZeKOYQQcJPN7NjpwEJZzMakbngWaeCZqloJUs0z7KMzdiTZvHu5rdF9qZbxLIjxHM8PMYD7kpHOCahIlncOPTHZOIAM8DEXG/bFVqC43C350R7Xili7x/96PYjtB+yQ7110vzze2h5LJGfN2aY9rEdIe4iw0wShs80u0Nh66HLEIG/QG2zJJjbsHVIv4QTvmKGOI6NTW5Zq2847qsOMIvTwBY8c6jAZ7umplcaz0z7fsY7vi8wNwBqIHDaPLqLpnknFEf533n9YDK1vE268/lA7dZUGp3cjX0euZg4A3gxQQuQLrYRWbX6qHhoG9f9UouUIG3D7qsYetd3lHhOkyANDjE17Trsn4yaFPKIZZSFa6Tq30yHaX7FQqtOiEt8RwRaIpd7WY7UHvAUDaTh3Vb1V/IRaXuA5LfoH0HibpD3gn+qQZdiw85Dm+KQ4hrQHZpt5SSouLdQ2jpdYe7V70hsetdigzrXGoLsRn8xd9aDhRI3Ci1uuvLoeka12Z9433jDRlXEk/xIrLnpnQuUsyzk2K1R4p98u0sz9DGJ+1bwH6gKphcTc5WCgXHjiC1Zk6Jlv3giX3NXWtygYFbBvdx2FlTMFqsNuk9u1ILoVnLrkStlTl1JmVSxkKDDi14F1raqXUl3bzH2xz7A9Tr2Q238mH5bV4H85UoLr7yHS2cuE6He8vfceuW16wtgIU029XJgaXtrFHX17fToq6tcK9FfXrt2vfLQg2KC61KT/8B2i5JSJwgAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6d23003e935c9f1005dff7dddd03d65a^sys_idNOT IN54d540b2939c9f1005dff7dddd03d648,799484fe935c9f1005dff7dddd03d6b1,b919403a939c9f1005dff7dddd03d6ba,c120547693dc9f1005dff7dddd03d6de,cbcc8cbe939c9f1005dff7dddd03d6a6,e973843e935c9f1005dff7dddd03d672"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>155b7c27-405f-48e9-93f5-14dfdf452782</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 09:07:50</sys_created_on>
+        <sys_id>54d540b2939c9f1005dff7dddd03d648</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <ui_id>0de85c73-f007-4e00-a500-fc33e8feb2ac</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FULPXle+yXHesskGDdAL0BpdLJpCoEjK5pYSVYqKowb+9w4lSpYvUb22kXYBv5mXIc8Mz5nR+POTw6lz6YwmF64XhEM8dgf9gete9CeTYDAJ3YvxxO1R7HScGEcMduK5ryUMH7DIzPjpSSs+mzHVJZlSLNZdFiVC5oz5xmK5RLCZ8jQROP/0X2zInAsKi87l5y8dJ8EKVjRTzuXTxpLOE+YLHDABR3+Ek+MZmO/rVmU4lds+mpNhmFZnSkUNgEHHYY+axZTBHSEWKes4EY4p1lLlzqVWGUwohun7WOT1jjkTCRzmmL2PKf8OJ1+4rmt2hgycIaxcrYe+jVo5TeaSE/Y+0VzG5YzGgbA2RIosit+V6E28WYgzoat4w0yWwnksMaBjXWMKP87l4kN14S2PC//sopAEi3qENUQhyDRLzQswwSI4yI9wkkBs/ETJB14YA5aoOxMw6IZCLuDSlM/iLiYGeBdihLu3MH9TTH/Cihsv3sIxYGyACx7x4pkdE0dnWQTE/5YZKKVr1gm/jANsSIniib6CGx6YxbvsWGK7nhcEXjAaD1YMmJCQjoPQw2MyWD36AsO1EVZffRZhLhoU720zuMB2KEenYPzq1sCseLoHysr4LiYiowz9XcFt88ASOJBSMByvGNxvZ7Cd2aYwN9xxShIiLRE8m8gRRvXNZlLPGSoAwC+sEU9RaiSOphJxC75h0UG5zFCUpRq2aVjRWM3gh2IEwHadWjgvfGst0uGLSNQSys7e7GTb/0LDxwq2R9tSNvPWsnRASEOn2zI9URnZA1Nl+Of19Q6EzxSS0YEyPFeSX1BJhq0kIHT17GUSaftGWi5PyNUbSTITQnR3UxF2D6x1MSoT34cK86YPlrrUXuJzuuKve1QZuUpTSThk5LSRvBdczyEdb2X//TbXehj019UAJYAXfN2tirvV8mnVUX4LHiwOAmVb+RtEtdXg16TvIhjFV/rP9IJbORj219OkpHlDMPeZ6w5IggzWPzSP84gwJaUOIFhfi0V679yX29g/MlPAfXSNFQUef8sYVPU5TlHAWIyuEhMYRrvlma+S0mhbf/bO4848TMGvp2/fVNLdI2x1rSmDthVFK9m5jsRKq+OT1RpvNBp452LTLDbJgvapkklifTtJwem1N6/D1dM3RLnS0KPf749cr+f5ZXPtu37dZXPqE2C2r0pmb4vhL7tzUwOH9zwGInpXQtzXvTXjZ9y1ZF+bs5TvHVWeplBm1roCpC0Mq4nnNzQ+y846aeqEp37JeOtbcfnRQhm1f56TtRyZZsG/jOiGUO4oIs00v62GHTtO8u/Uz3HXhjXqXZ4801545/+pfs8el7amPuauPfPLtLh7QKoMNzrctgZ3eG5wf/8G98sPDK2bRwUYAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=54d540b2939c9f1005dff7dddd03d648"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>155b7c27-405f-48e9-93f5-14dfdf452782</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 09:02:29</sys_created_on>
+        <sys_id>799484fe935c9f1005dff7dddd03d6b1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <ui_id>be59a4d9-46d4-4ffa-99b7-e8d4ceb9a3b9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U22rjMBD9leBnY3xJQpu3pdlAH7aF7NKXblfI0iQRyJYrS2m8If++I1tOsr0RSsuyUD9pRnM5Z+ZYt9tA8GASxCmPk/NkzLIky9I4Ts+GST7O8iTlGQWAIAxKWgBGrqm0UKPdHtBRG2ps/dPGccZpVWm1Bv6rP5C86W62W6PFcgk6YlZrKE10FLLbYT0u6krS5uady7KVkBxvgsntXRhUVCMNAzqYbB9dmaYCImkOErv/gALBGBh0cMKTp9QXmAmQvH5mbK4N2sY3IGvfQGnuUCVxHAawMVBywJYLKmsIg4KWnBqlm2BitEWHBsqvS9nsI1aiNFgWC61AVt2poJta/MZuyThuP5e3AGTMoIvYm8RPv3OzlRIMrisjVNl5DM2lz2FK2qK86mi5vcGCWmn6vaHH1lgPKkfBgeoQL76v1MO87zcTZUvXo5eKUbm3qMGl5tbgvHBLIKHAOqTAzYpySdx6RZuMUIpoKdGIFlI9YM9aLMuIMoc7woHRaIb+aeu+oVo4Et+wDCbvWvLk3rq+HQ0PmLScW8KkXR6G1kyLynzBwmvwMHeh/3WG8KookoMGNDDc8tGv80S9z/0Ib9bwVDHrJje4nPYCPgFrnz3vwT4G7wXMfXUi+LF631+8w0/ZfoRs89FrUmDnh80f1TxId0PSdBSPkzFxD5lqSOwPAKgIwqjmRMM9vnnmqaS/+khU5uACIwfzfeQbn2sHcXDVQTyV3l/JL9DtX+tjn9f66AO0fvaPtO6x/Wdif0nid38A9h4z3NYIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=799484fe935c9f1005dff7dddd03d6b1"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>create priority high in task table.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>5fccfbc5-45b2-452d-8194-46aa8d3185d4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 09:22:09</sys_created_on>
+        <sys_id>b919403a939c9f1005dff7dddd03d6ba</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <ui_id>243b82a2-985f-4ae2-9ef0-850aa8c05cec</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91UXW+cMBD8K8jPCMGRoOTeqkYn5aFJ1VZ5SRPL4D2wamxqm8vR0/33rjH3kbYnRVGkquUJD7s7M8vA/YYITuak4JBeXmZFlWd5PkvT2cVZVhZ5mc14ziArSUwUawErV0z2YPE83iDQGaGNcMPXPk1z3oi6eYS2k3oAoL4n4JuNM6KuwSRVbwwolzwr2m4fOXTMuBYfneo4VGA56zqjV8BpOZyqPyoZ59vKiM4JrULDtbU9RB/BtExheXR9Fb1nhqM1Lmwn2XD3/zqsGiE5jiDz+4eYICkqdGDIfPPLIzd0QCUrQeIivnhHzEEUNhO/ODu7AQsBkts/hMnT4NlNBHQ1EWjDvaosJrB2oDgg4ZJJCzFBT5w5bQYyd6ZHwADjt0oO+4pGKIdDcUwDsgt3LVtb8QO5siIdL9+3BPRbQajYH+kUgwBXjRYV3I7bDYhjpZx6Ki37Vt0EUz5AsGS9dLsAIdJbnAedt+BFBcXLz41++rTjWwg1mp3US10xuT8xh+++7B1uC98RSPAhoS0GQKia+hSIsRmltEkt8ZAspX5CTitqlbDK605wYSxZIH41wnfMCG/iA47B5u1onn7vPW+wMQmmo+fR8BhmXxqy9g4Hr2CSuY13v5MM0vOTkYCzQwKOZh5+KWs6m52nRVbQ8AnRlDpmv/3+ZXo0en2cPXd0E7hfqvtZ8wkfuzQfY1OS07dP8sVfyvCk7R8L8anoPvwEzZIKTwsHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b919403a939c9f1005dff7dddd03d6ba"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>155b7c27-405f-48e9-93f5-14dfdf452782</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 09:52:57</sys_created_on>
+        <sys_id>c120547693dc9f1005dff7dddd03d6de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <ui_id>dfa23921-c55c-4ac7-92c3-0d97f9081cb2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUTU/jMBD9K8jnKEoaqKA3pFVv20rLigtC0SSetJYc22s7hS7ivzOOnQIVlTgsQpuTPfa8j/FT7p6Y4GzB5iUWF1flvK3KqpoVxezyvGzmVVPOeAWI5yxjCnqkmx4aifW4ydgO5BCKtOTCGQn729dKuxWSW1RscXefMQOWejxatng6OvJ7g7WEBiU1/g74Z6uI/1lt75pPaA0sxzVteRBUZAwfPSqOxNeBdJixHhQHr+2eLbwdqGAR+FrJ/eHGVigfnW5Rmrjq4dGJv8RzWYSODslkm+Zx2NZpVtOYtGhxbbzQKlZGielQy6FXq2gnTBk7GKR/M+XBER6aID7ISdq6m61++DURLoUafaZDqVuQhx14b0UzeHThZVBiT0B1D8YItamN1TsxNpOWPt9I2uSd1A9E6sRG5dAG4TnNCvIl1X+M5VuwIrj4STDU/Dy6r/8MgTf6SIrraJouuNYK468JbodJ3HM2xZNjcXUyAmXz+uRjIt0XRRN7wvF4FpGyT2ubAJYCJXcfiJ2ymQjqXSJI+Sz/fT7LeTF+35PSqPg/C+mbP8eJuN6/AMJEhxhPBQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c120547693dc9f1005dff7dddd03d6de"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>create priority low in task table.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>90b226fe-9974-4625-a472-79cbd1214332</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 09:38:21</sys_created_on>
+        <sys_id>cbcc8cbe939c9f1005dff7dddd03d6a6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <ui_id>3ac83c35-286f-43b1-89cc-bd450b4bb5db</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW+bQBD9K4gzRnzYFvatamQphyZSW+WSxmjYHeyVFpYsixOK/N87C/gjTa1EVaWqUn3aHc97897w4L5zBXeX7pxjsFiEcxaHcRwFQZRMw2weZ2HEY8Awcz23hAKpcweywZru/YEKlRZKC9N+a4Ig5lI9rTnWTIvKCFUORee6rht0vmJRKQ26da6vnI+g+RqqSqsd8jQb4V1ntNhsUPus0RpL45+17PdrYpCqRUytmkuQF03nIMHfhAhOAI1QqzLNlU41PpJdcwn3upPgQzOtiIu6ktDe/d/UW5tiWyE59bnL+wfPrUCTHoPaXXY//WXaClMJGUpaqF2TBIPOsGHv3Vk+EKwESl7/Itx2DN3NOCDdjQOU5lZV6Ln4bLDkSANzkDV6bgElB6N06y6NbqhAjvltKdtjx1aUhkiJZouyGk4FPNfiO80K50H/s7gcyS/DoeN4Tcc4DWW2VYLhbZ+doWIgkyOGKdkU5c1gygYRc2ikOQSRKk1NfFhZC1bUoDj/slVPnw/zVqLszY7qpWIgjzcw9ICzxtC26BmhxIJ40oIyKMpNaoMoejBJKfyNpIufU+JpZi02pQ/M6vZpYeCvqH7Vl+9AC2viE9EQeN+bTx8bO3ewMQpOe8+94T66tnV4kz4Q8Q5HmXvv8HkLMZhdjAROTwk44zx94roumsZZEkE0WSSzfDIFpBPmwSSZBQAJC2YMmX/C7vev3/7fT7mldW4GSe+18wJ8wd4h5Oe1MeDBnw948peiPWr7x7J9KdEPPwCMC3UUsgcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cbcc8cbe939c9f1005dff7dddd03d6a6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 08:57:33</sys_created_on>
+        <sys_id>e973843e935c9f1005dff7dddd03d672</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <ui_id>2a7f68d6-33c8-41eb-82b5-d8db3913d6ae</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1XbU/bMBD+K1U+l85pmpDyDY0hMe1FYsAXhCzHvrSe3CQ4zkaH+t93TpymtFvpBt2LxJcoPvt8zz1+zrlc33tSeEcejKIgxMdhGhB/6JMYojjmY8J4HEXhKPD6XsZmgCtZUej8C1NUAyvzDCdwUNkZfBWyLBSbX3UWPpVKaMi8o+ubvlcwjbsY0N7R/dqUmRdAFUtAoeMno2U2QfddwbWOxw5d77xF91PYNiBOlG2oXAuLa9j34M5AJgBDp0yV0PdmLBPM5Hq+tOAu4mOmOsNUZqbJeAqqaN5m7K6U3zCIHxHrkgJmyx0xyyF1pLV85ZLDx8JIBFlbDEtUS2auqln2ocnI0g0pq5RZobsqcT8oLHyLx4FLP03zr+dtwFOZ1Zm6SZVzppYjZpCPpDJQ2iOq5MUaS43l3fo5gYIZRqQz5Bkt1JIt6ygIejaYKBwMUpV/RXSlnGQDxm2GA6SVDU7RflKbr5iWNt33uA0623CXmbyt4MzqIBom0ZjE4kCkJDkYxUF4wDiQA4j8EEIR8dAPvEVNLb2tbFINSY4O2jCKC0quZWGOEcIXcJkv+q4SiJ8OYTweksQnJCAkDjmJA0iCw+gwYCL+gaRSCUrspxBO7da9+sT7O+PbKIZTB/BnwF0p1EOaNcH2WA4xIX+pHoyunlIO+1H5Y4ptEn5EtnyrLGDlAv+cVzr706rdAV7r/LbBty7addhbNBu8aPa/0OxhvE0UnHSHr4Hj2a6I9f4ec5xMQA94pZESs1g8o35Pcl5Z0npnJ62Ad8Daep+3YNfBO8kKtzuVotMs2a7ZRgS/Jtlg+CLYZ75kw20iSMfdmYsKKWEG9tQe8ymISkHvBEO8upAr9+zjCJcirxr/H4Jum2MXqDZTI1dv2XAPt+zoP+2T99f+0rZZsxrFwnpyfzvaqhBYkcOyTeR5JqTFW67IuWkuoTzO5pfXG9fxoHEGQZP5YnGzqf1fdf+9Qul+B1HEZVskO1CwvMud31ZKXLF0v5jOyRXK6Pmv9r/XjfyblfLUokj41q877xTQcNeVwR0dDkMS+RGFWaHyOSXuBQC/75QzLagG/IMtzWYRvHErsc/ovcaVvfPlyt/T+4VF96Dx3iGzB86bmTp118O1RtvfS6P9IuynC/vmOzS4Sq/ZEwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e973843e935c9f1005dff7dddd03d672"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6d23003e935c9f1005dff7dddd03d65a^sys_idNOT IN0aeb807e939c9f1005dff7dddd03d610,50a78032939c9f1005dff7dddd03d60c,f3f3487e935c9f1005dff7dddd03d67b"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4eeb807e939c9f1005dff7dddd03d60f</block>
+        <comment/>
+        <connected_to>5fccfbc5-45b2-452d-8194-46aa8d3185d4</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>155b7c27-405f-48e9-93f5-14dfdf452782</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 09:34:28</sys_created_on>
+        <sys_id>0aeb807e939c9f1005dff7dddd03d610</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <ui_id>90b226fe-9974-4625-a472-79cbd1214332</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">94a78032939c9f1005dff7dddd03d60b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>155b7c27-405f-48e9-93f5-14dfdf452782</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 09:15:46</sys_created_on>
+        <sys_id>50a78032939c9f1005dff7dddd03d60c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <ui_id>5fccfbc5-45b2-452d-8194-46aa8d3185d4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4bOgWHHTbD6VnQIUGBbhzXoZSsMWqITYbLkSXLSLMh/H+WPNGjTDSt23E16FMn3yAftmWl903q3NFfOyZVm+deHCZM6YHTeMw01spxxo4X00mg2YRtQbcD2e2/laoU25q21qH0sRcHBisLvGjwcvrVJkokGbQ2aopQppGsU7O7fXICvpRL0sqfZgCV2Hi3L989CoUChoERFfe6ojV5RuhR0u4RZNUuTGc+m82yaJNN3F2k5z8p0KjLAizm9GxOvT1SfGURoQpAbyxsrApdpMmH46FELpH4VKIcTRhIEeGN3LPe2JcAiiFutdscXa0kSc0Z11qia/lTDo5M/MdRMkpBTIUnk2EeP12IYbA/ztZEcb5uOZYd4KNWQw41qa/2pFxNWghW0yo8rIaR1VA+bQD8QGthVd2uz/TI2XEjdSR2CynBQxxt4GkjZenRhL6iwpkJFDU1DYyoaazaySyYudbxSdIkrZbbUNDgwBh6IxzQtiBeEv+/ge7AyqPhIZSiZdukKx61sRm1dc3boplL8aAOfXt+gpOiHQQ/6tCtqs8GB9GHy0ulFBzzZPbpZ5NE1uTNa0t4j6aLPr1v794//hY2rBKr0kqfnbQzZORtHHzrkpZlHra84Ov2DowfkLy09m/139KmjA80SnORF9/9SufBTvNnSD8G6fQvXu0kgl46YLAN2M/7xIbCj/Ut+Cm2N/R40PGGHX+rtL+gtBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7ff3487e935c9f1005dff7dddd03d679</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Employee ID Card Request Automation">6d23003e935c9f1005dff7dddd03d65a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 08:59:54</sys_created_on>
+        <sys_id>f3f3487e935c9f1005dff7dddd03d67b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 09:56:55</sys_updated_on>
+        <ui_id>155b7c27-405f-48e9-93f5-14dfdf452782</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnW9DDUm3fjBYBArQNkAS5tIGwIlcWUUpURCqOa/jfu9TDMRKnRYsceyOH3N2Z3aG0Z7q1dWvNrV4bIzcVW327nzJZOYzWe1ZBiWzFuK6EtFJXbMoeQbUO2+9D+JAnC5HMoogvZvMAs9kizOKZWIgsWgaRSAA9qOtGU0xqLFg8HL63vh+JHkVB+YQ0tYLd3Tun5YVUosFBUg0NKbHYsNX+xZHd1ZgqyFBR9RvbyGpD4VLQbglxHgd+zKMwiULfDxfzIEuiLAhFBDhP6N4Y+PGkQ2ea5ooQZMb0uhGOS+hPGT5ZrARxXuWgDE5ZCZUAq5sdW9mmJaBBEFeV2h1vFLKylI3yFKjqflXCk5E/0eX0fReTI0nk2J8et+nQ7h7mhZYcr+qOZYdYyNQQw7Vqy+prL8YNCnNolR0HRUhrKB/Wjr4jNLDLbwq9vR4LXsiqkzocKs1BHXdgqSFZa9G4uaDCkhKlJY2R2pS6WcoumLiU3kbRxsuV3lJR51YPuCPuUbfAuyD8UwffQSOdii+UhoJpliY1vJH1qK0rzg5dV9KH1vHp9Q1K0r4ZdKEPW1OZRxxIH6avX0XaAc9P4zKf2AIn1/jQorETaSbrN/3+27vvYeLchzxY8uC8iSE6Z+LJ5w55beVR6Rt+Dv7g5wH5S0PH8X8/n/rZ0czASJ52X2pK574T/2zoe2fcvoTp3SSQS0NMbh12Of4N3MGO5i/5KbTVzQ+n4Rk7/AJh9SyPVwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6d23003e935c9f1005dff7dddd03d65a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 08:56:18</sys_created_on>
+        <sys_id>0323c43e935c9f1005dff7dddd03d62c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 08:56:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6d23003e935c9f1005dff7dddd03d65a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-05 08:56:18</sys_created_on>
+        <sys_id>8b23c43e935c9f1005dff7dddd03d607</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee ID Card Request Automation" source="x_2250616_employ_0">e5d9af6a93989f1005dff7dddd03d62b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee ID Card Request Automation">e5d9af6a93989f1005dff7dddd03d62b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-05 08:56:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6d23003e935c9f1005dff7dddd03d65a"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=6d23003e935c9f1005dff7dddd03d65a"/>
+</record_update>
